@@ -12,9 +12,8 @@
 <body>
     <div id="start-anim">
         <div id="start-anim-main">
-            Witaj Kacper
+            Witaj Kacper, ez
         </div>
     </div>
-    
 </body>
 </html>
