@@ -12,7 +12,7 @@
 <body>
     <div id="start-anim">
         <div id="start-anim-main">
-            Witaj
+            Witaj Kacper
         </div>
     </div>
     
