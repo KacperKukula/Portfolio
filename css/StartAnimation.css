@@ -1,27 +1,66 @@
 #start-anim {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     z-index: 100;
     background-color: white;
 }
 
-#start-anim-text {
-    margin: 44vh auto;
-    text-align: center;
+.start-anim-container {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 0;
 
+    text-align: center;
     font-size: 38px;
     font-weight: bold;
     letter-spacing: 1px;
-
-    display: none;
-    animation: TakeOff;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-    animation-duration: 1s;
 }
 
+.start-anim-box {
+    display: inline-block;
+    background-color: white;
+    opacity: 0;
+    z-index: 1;
+}
+
+.box1 {
+    text-align: right;
+}
+
+.box2 {
+    text-align: left;
+}
+
+.boxbottom {
+    position: absolute;
+    z-index: -1;
+    top: 0; right: 0; left: 0;
+    margin: 0;
+}
+
+/*Space animation*/
+
+.start-anim-space {
+    position: absolute;
+    text-align: center;
+    bottom: 0; left: 0; right: 0;
+    margin: auto;
+
+    font-weight: 400;
+}
+
+/*animation: TakeOff;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-duration: 1s;*/
+
+/*
 @keyframes TakeOff {
     0% {
         opacity: 0;
@@ -32,4 +71,4 @@
         opacity: 1;
         transform: translateY(30px);
     }
-}
+}*/
