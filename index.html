@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Nav.css">
     <link rel="stylesheet" href="css/StartAnimation.css">
     <link rel="stylesheet" href="css/Normalize.css">
 
@@ -14,20 +15,32 @@
 <body>
     <noscript>Your browser does not support JavaScript!</noscript>
 
+    <nav>
+        <div class="nav-linker">O mnie</div>
+        <div class="nav-linker">Doświadczenie</div>
+        <div class="nav-linker">Moje Projekty</div>
+        <div class="nav-linker">Kontakt</div> 
+    </nav>
+
     <div id="start-anim">
         <div class="start-anim-container">
-            <div class="start-anim-box box1">Hej</div><!--
-        --><div class="start-anim-box box2">, jestem Kacper</div>
-            <div class="start-anim-box boxbottom">Witaj na mojej stronie</div>
+            <div class="start-anim-text">Hej</div>
+            <div class="start-anim-text">Jestem Kacper</div>
+            <div class="start-anim-text">Witaj na mojej stronie</div>
         </div>
-        <div class="start-anim-space">Naciśnij Spację aby przejść dalej</div>
     </div>
+    <div class="start-anim-SpaceInform">Naciśnij Spację aby przejść dalej</div>
+    <div class="start-anim-TakeOut"></div>
     
     <main>
-        <span>Witaj Kacper, ez</span>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="js/animation.js"></script>
+    <script src="js/StartAnimation.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/spa.js"></script>
+
+    <!-- <a href='https://www.freepik.com/photos/nature-forest'>Nature forest photo created by wirestock - www.freepik.com</a> -->
 </body>
 </html>

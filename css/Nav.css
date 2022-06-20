@@ -1,0 +1,31 @@
+nav {
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px;
+}
+
+.nav-linker, .nav-header {
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.nav-header {
+    line-height: 50px;
+}
+
+.nav-linker {
+    line-height: 80px;
+    font-size: 18px;
+}
+
+.nav-linker:hover {
+    background-color: #f0f0f0;
+}

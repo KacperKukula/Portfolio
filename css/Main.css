@@ -2,12 +2,26 @@
 
 html {
     font-family: Roboto, 'Verdana'; 
+    overflow: hidden;
 }
 
 Main {
-    position: relative;
-    width: 90vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100vw;
     height: 90vh;
     text-align: center;
-    vertical-align: middle;
+    background-color: white;
+    display: none;
+}
+
+body {
+    width: 101vw;
+    height: 101vh;
+    background-image: url('../assets/trees-forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
