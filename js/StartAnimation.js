@@ -12,6 +12,7 @@ function EnterAnimation() {
     //Animation -> Press space
     window.addEventListener("keydown", function (event) {
         if(event.key == " ")  {
+            tl.pause()
             gsap.to(Bckg, 0.2, {opacity: 0})
             gsap.set(Bckg, {display: "none"})
             gsap.set(TakeOut, {display: "none"})

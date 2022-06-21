@@ -19,9 +19,10 @@ Main {
 }
 
 body {
-    width: 101vw;
-    height: 101vh;
+    width: 100vw;
+    height: 100vh;
     background-image: url('../assets/trees-forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
