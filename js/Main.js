@@ -1,10 +1,10 @@
 const nav = document.querySelector("nav"),
         main = document.querySelector("main"),
         NavLinker = document.querySelectorAll(".nav-linker")
+        AJAX = document.querySelector("article")
+let IsMainEject = false
 
 gsap.set(main, {yPercent: 100})
-
-let i = 0;
 
 // NavLinker.forEach(element => {
 //     this.addEventListener("click", function(e) {
@@ -14,12 +14,28 @@ let i = 0;
 //     })
 // });
 
+
+//SPA
 for(let i = 0; i < 4; i++) {
     NavLinker[i].addEventListener("click", function(e) {
         gsap.to(main, 1.5, {yPercent: 0, ease: "power4.out"})
         gsap.to(nav, 1.5, {yPercent: 0})
 
         ///Spa
-        makeRequest('content/AboutMe.html', main)
+        let xhr;
+        switch(i) {
+            case 0:
+                makeRequest('content/AboutMe.html', AJAX);
+                break;
+            case 1:
+                makeRequest('content/Performance.html', AJAX);
+                break;
+            case 2:
+                makeRequest('content/AboutMe.html', AJAX);
+                break;
+            case 3:
+                makeRequest('content/AboutMe.html', AJAX);
+                break;
+        }
     })
 }

@@ -1,5 +1,6 @@
 // Instruction 
-// makeRequest("[Your url]", Object)
+// makeRequest("[Your url]", Object) 
+//Task: add callback
 
 function makeRequest(url, _container) {
     http_request = false;
@@ -26,14 +27,11 @@ function makeRequest(url, _container) {
 
     //What happen if request okay
     http_request.onreadystatechange = function() { 
-        console.log(http_request)
         if (http_request.readyState == 4) {
             if(http_request.status==200) {
                 _container.innerHTML = http_request.response
-                gsap.to(document.querySelector(".Image"), 0.5, {delay: 1.5, x: 20, y: 20})
-                gsap.to(document.querySelector(".frame"), 0.5, {delay: 1.5, x: -20, y: -20})
+                SwitchAnimation(url)
             } else {
-                //problems
                 _container.innerHTML = "something is not right"
             }
         }
@@ -42,4 +40,21 @@ function makeRequest(url, _container) {
     url = encodeURIComponent(url);
     http_request.open('GET', url, true);
     http_request.send(null);
+}
+
+function SwitchAnimation(_url) {
+    switch(_url) {
+        case "content%2FAboutMe.html":
+            gsap.to(document.querySelector(".Image"), 0.5, {delay: 1.5, x: 20, y: 20})
+            gsap.to(document.querySelector(".frame"), 0.5, {delay: 1.5, x: -20, y: -20})
+            break;
+        case "":
+            break;
+        case "":
+            break;
+        case "":
+            break;
+        default:
+    }
+    console.log(_url)
 }
