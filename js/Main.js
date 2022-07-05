@@ -22,7 +22,6 @@ for(let i = 0; i < 4; i++) {
         gsap.to(nav, 1.5, {yPercent: 0})
 
         ///Spa
-        let xhr;
         switch(i) {
             case 0:
                 makeRequest('content/AboutMe.html', AJAX);
