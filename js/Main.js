@@ -33,7 +33,7 @@ for(let i = 0; i < 4; i++) {
                 makeRequest('content/AboutMe.html', AJAX);
                 break;
             case 3:
-                makeRequest('content/AboutMe.html', AJAX);
+                makeRequest('content/Contact.html', AJAX);
                 break;
         }
     })
