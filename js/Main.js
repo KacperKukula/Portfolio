@@ -26,16 +26,20 @@ for(let i = 0; i < 4; i++) {
         ///Spa
         switch(i) {
             case 0:
-                makeRequest('content/AboutMe.html', AJAX);
+                makeRequest('content/aboutme.html', AJAX);
                 break;
             case 1:
-                makeRequest('content/Performance.html', AJAX);
+                makeRequest('content/performance.html', AJAX);
                 break;
             case 2:
-                makeRequest('content/AboutMe.html', AJAX);
+                makeRequest('content/projects.html', AJAX);
                 break;
             case 3:
+<<<<<<< HEAD
+                makeRequest('content/contact.html', AJAX);
+=======
                 makeRequest('content/Contact.html', AJAX);
+>>>>>>> d82a4010f594f7a1c399d4d439617921c6200c08
                 break;
         }
     })
