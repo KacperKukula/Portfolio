@@ -35,11 +35,7 @@ for(let i = 0; i < 4; i++) {
                 makeRequest('content/projects.html', AJAX);
                 break;
             case 3:
-<<<<<<< HEAD
                 makeRequest('content/contact.html', AJAX);
-=======
-                makeRequest('content/Contact.html', AJAX);
->>>>>>> d82a4010f594f7a1c399d4d439617921c6200c08
                 break;
         }
     })
