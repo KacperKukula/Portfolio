@@ -26,16 +26,16 @@ for(let i = 0; i < 4; i++) {
         ///Spa
         switch(i) {
             case 0:
-                makeRequest('content/AboutMe.html', AJAX);
+                makeRequest('content/aboutme.html', AJAX);
                 break;
             case 1:
-                makeRequest('content/Performance.html', AJAX);
+                makeRequest('content/performance.html', AJAX);
                 break;
             case 2:
-                makeRequest('content/AboutMe.html', AJAX);
+                makeRequest('content/projects.html', AJAX);
                 break;
             case 3:
-                makeRequest('content/Contact.html', AJAX);
+                makeRequest('content/contact.html', AJAX);
                 break;
         }
     })
