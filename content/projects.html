@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
     grid-gap: 15px;
 }
 
@@ -43,6 +44,17 @@
     -webkit-transform: scale(1.2);  
     -o-transform: scale(1.2);
     transform: scale(1.2);
+
+    grid-gap: 10px;
+}
+
+.tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tile:hover {
+    cursor: pointer;
 }
 
 </style>
@@ -70,4 +82,8 @@
             <div class="tile-background" style="background-image: url('../assets/trees-autorskie.jpg')"></div>
         </div>
     </a>
+    <div class="tile" style="background-image: url('../assets/trees-forest.jpg')"></div>
+    <div class="tile" style="background-image: url('../assets/trees-forest.jpg')"></div>
+    <div class="tile" style="background-image: url('../assets/trees-forest.jpg')"></div>
+    <div class="tile" style="background-image: url('../assets/trees-forest.jpg')"></div>
 </div>
