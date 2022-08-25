@@ -58,7 +58,7 @@ function makeRequest(_url, _container) {
     }
   };
 
-  _url = encodeURIComponent(_url);
+  //_url = encodeURIComponent(_url);
   http_request.open("GET", _url, true);
   http_request.send(null);
 }
@@ -75,6 +75,5 @@ function SwitchAnimation(_url) {
       break;
     default:
   }
-  console.log(_url);
   gsap.to(AJAX, 0.5, { opacity: 1 });
 }

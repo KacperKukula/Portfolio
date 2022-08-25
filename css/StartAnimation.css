@@ -1,60 +1,77 @@
 #start-anim {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: -20%;
-    margin: 0;
-    z-index: 100;
-    background-color: rgb(255,255,255);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -20%;
+  margin: 0;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
 }
 
 .start-anim-container {
-    position: absolute;
-    top: 0; bottom: 0; right: 0;
-    margin: auto;
-    width: 80%;
-    height: 400px;
-    padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+  padding: 0;
 
-    text-align: left;
-    font-size: 52px;
-    font-weight: bold;
-    letter-spacing: 0.9px;
+  text-align: left;
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .boxbottom {
-    position: absolute;
-    z-index: -1;
-    top: 0; right: 0; left: 0;
-    margin: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
 }
 
 .start-anim-TakeOut {
-    position: absolute;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    top: 0; bottom: 0; left: 100%;
-    margin: auto;
-    z-index: 1000;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  margin: auto;
+  z-index: 1000;
 }
 
 /*Space animation*/
 
 .start-anim-SpaceInform {
-    position: absolute;
-    text-align: center;
-    bottom: 0; left: 0; right: 0;
-    margin: auto;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 
-    z-index: 1000;
-    font-weight: 400;
+  z-index: 1000;
+  font-weight: 400;
 }
 
 /*animation: TakeOff;

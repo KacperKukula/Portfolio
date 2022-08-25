@@ -35,10 +35,13 @@ article {
 }
 
 h1 {
+  margin-top: 0;
   font-weight: 800;
-  font-size: 20em;
+  font-size: 36px;
 }
-
+h2 {
+  font-size: 24px;
+}
 footer {
   width: 100%;
   position: absolute;
